@@ -1,0 +1,124 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+   
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    color: #ffff;
+    background-color: #444;
+}
+
+.card{
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.card:hover{
+    background-image: radial-gradient(circle at 50% -3.03%, #ffff8e 0, #ffff6d 16.67%, #ffed48 33.33%, #ffd510 50%, #f9bc00 66.67%, #f4a400 83.33%, #f08c00 100%);
+}
+
+.card .img{
+    background-image: url('./assets/sucesso.png');
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+    
+}
+
+.card:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+
+.card .img span{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.card .content{
+    padding:0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    
+
+}
+
+.card:hover .content{
+    padding: 20px;
+    height: 260px;
+    transform: translateY(0px);
+    
+}
+
+.card .content p{
+    margin-bottom: 0px;
+}
+
+.card .content .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .content .desc{
+    font-size:14px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+footer{
+
+    height: 60px;
+    display: flex;
+    background-color: #080713;
+    color: #f08c00;
+    width: 100%;
+   
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #444;
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: space-between;
+    max-width: 992px;
+    margin: auto;
+    
+}
+
+.footer p{
+    padding: auto;
+}
+
